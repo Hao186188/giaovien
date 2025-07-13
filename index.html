@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bốc thăm gọi số học sinh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bốc thăm gọi số học sinh lên bảng</h1>
+        <label for="studentCount">Nhập số lượng học sinh:</label>
+        <input type="number" id="studentCount" min="1" max="100" value="30">
+        <button id="startBtn">Bắt đầu với số</button>
+        <hr>
+        <label for="excelInput">Hoặc tải lên file Excel danh sách tên học sinh:</label>
+        <input type="file" id="excelInput" accept=".xlsx,.xls">
+        <button id="startNameBtn">Bắt đầu với tên</button>
+        <div id="nameStatus" style="margin:8px 0;color:#16a085;font-size:15px;"></div>
+        <button id="drawBtn" disabled>Bốc thăm</button>
+        <div id="result" class="result"></div>
+        <div id="congrats" class="congrats" style="display:none;"></div>
+        <div id="popup-congrats" class="popup-congrats" style="display:none;"></div>
+        <div id="hearts-container"></div>
+        <div id="history" class="history"></div>
+        <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
